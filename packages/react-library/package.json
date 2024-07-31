@@ -20,7 +20,7 @@
     "access": "public"
   },
   "dependencies": {
-    "stencil-library": "*"
+    "gantt-component": "*"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

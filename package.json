@@ -4,6 +4,17 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "prebootstrap": "yarn install",
+    "bootstrap": "lerna bootstrap",
+    "postbootstrap": "lerna run build --concurrency=1",
+    "clean": "lerna clean -y",
+    "postclean": "yarn run bootstrap",
+    "watch": "lerna run watch --stream",
+    "build": "lerna run build --scope={react-library,gantt-component,vue-library} --stream && yarn run build:angular-lib",
+    "build:angular-lib": "lerna exec --scope=angular-workspace -- npm run build component-library",
+    "dev": "lerna run dev:start --stream"
+  },
   "devDependencies": {
     "@types/node": "^20.14.10",
     "lerna": "^8.1.6",

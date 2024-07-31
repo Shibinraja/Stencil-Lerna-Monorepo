@@ -19,6 +19,6 @@
     "access": "public"
   },
   "dependencies": {
-    "stencil-library": "*"
+    "gantt-component": "*"
   }
 }

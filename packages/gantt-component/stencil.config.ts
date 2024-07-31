@@ -4,7 +4,7 @@ import { reactOutputTarget } from '@stencil/react-output-target';
 import { vueOutputTarget } from '@stencil/vue-output-target';
 
 export const config: Config = {
-  namespace: 'stencil-library',
+  namespace: 'gantt-component',
   outputTargets: [
     {
       type: 'dist',
@@ -20,20 +20,20 @@ export const config: Config = {
     },
     {
       type: 'www',
-      serviceWorker: null,
+      serviceWorker: null, // disable service workers
     },
     angularOutputTarget({
-      componentCorePackage: 'stencil-library',
+      componentCorePackage: 'gantt-component',
       outputType: 'component',
       directivesProxyFile: '../angular-workspace/projects/component-library/src/lib/stencil-generated/components.ts',
       directivesArrayFile: '../angular-workspace/projects/component-library/src/lib/stencil-generated/index.ts',
     }),
     reactOutputTarget({
-      componentCorePackage: 'stencil-library',
+      componentCorePackage: 'gantt-component',
       proxiesFile: '../react-library/lib/components/stencil-generated/index.ts',
     }),
     vueOutputTarget({
-      componentCorePackage: 'stencil-library',
+      componentCorePackage: 'gantt-component',
       proxiesFile: '../vue-library/lib/components.ts',
     }),
   ],
