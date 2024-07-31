@@ -2,7 +2,7 @@
 
 ## Developing
 
-You can run yarn run build at the root level for every wrapper along with the stencil library to build the project and serve the upright content.
+You can run `yarn run build` at the root level for every wrapper along with the stencil library to build the project and serve the upright content.
 
 1. Clone this repository.
 1. Run `yarn install` in the root to install dependencies.
