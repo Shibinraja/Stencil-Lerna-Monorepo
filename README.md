@@ -1,4 +1,4 @@
-# Stancil.js-lerna Monorepo Starter
+# Stancil.js-Lerna Monorepo Starter
 
 ## Developing
 
