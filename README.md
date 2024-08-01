@@ -7,15 +7,18 @@ You can run `yarn run build` at the root level for every wrapper along with the 
 1. Clone this repository.
 1. Run `yarn install` in the root to install dependencies.
 1. Start developing the main library running `yarn start` inside `packages/gantt-component`.
+1. After finishing your work run `npm link` at the root of gantt-component and later run `yarn run build`.
 
 ## Building React library
 
+1. Run `npm link gantt-component` to link the stencil component with react-library.
 1. Run `yarn run build` inside `packages/gantt-component` to compile the main library.
 1. Run `yarn run build` inside `packages/react-library` to compile the React library.
 1. Check your components running `yarn run dev` inside `packages/react-sample-app`.
 
 ## Building Vue library
 
+1. Run `npm link gantt-component` to link the stencil component with vue-library.
 1. Run `yarn run build` inside `packages/gantt-component` to compile the main library.
 1. Run `yarn run build` inside `packages/vue-library` to compile the Vue library.
 1. Check your components running `yarn run dev` inside `packages/vue-sample-app`.
