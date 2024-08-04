@@ -2,6 +2,9 @@ dist/
 www/
 loader/
 
+# Node
+/node_modules
+
 *~
 *.sw[mnpcod]
 *.log

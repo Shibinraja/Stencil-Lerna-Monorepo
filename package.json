@@ -11,13 +11,15 @@
     "clean": "lerna clean -y",
     "postclean": "yarn run bootstrap",
     "watch": "lerna run watch --stream",
-    "build": "lerna run build --scope={react-library,gantt-component,vue-library} --stream && yarn run build:angular-lib",
-    "build:angular-lib": "lerna exec --scope=angular-workspace -- npm run build component-library",
+    "build": "lerna run build --scope={@workspace/react,@workspace/stencil,@workspace/vue,@workspace/angular} --stream",
+    "serve": "npm-run-all --parallel serve:react-vue serve:angular-stencil",
+    "serve:react-vue": "lerna exec --scope={react-sample-app,vue-sample-app} -- yarn run dev",
+    "serve:angular-stencil": "lerna exec --scope={gantt-component,angular-sample-app} -- yarn run start",
     "dev": "lerna run dev:start --stream"
   },
   "devDependencies": {
     "@types/node": "^20.14.10",
     "lerna": "^8.1.6",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.4"
   }
 }

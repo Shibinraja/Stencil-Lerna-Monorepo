@@ -1,7 +1,9 @@
 {
-  "name": "vue-library",
+  "name": "@workspace/vue",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "version": "0.0.1",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -19,6 +21,6 @@
     "access": "public"
   },
   "dependencies": {
-    "gantt-component": "*"
+    "@workspace/stencil": "*"
   }
 }

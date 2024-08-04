@@ -1,5 +1,5 @@
 import { Plugin } from 'vue';
-import { defineCustomElements } from 'gantt-component/loader';
+import { defineCustomElements } from '@workspace/stencil/loader';
 
 export const ComponentLibrary: Plugin = {
   async install() {

@@ -2,8 +2,9 @@
   "packages": [
     "packages/*"
   ],
+  "useNx": true,
   "version": "independent",
-  "npmClient": "npm",
+  "npmClient": "yarn",
   "command": {
     "publish": {
       "ignoreChanges": ["ignored-file", "*.md"],

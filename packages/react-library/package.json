@@ -1,8 +1,11 @@
 {
-  "name": "react-library",
+  "name": "@workspace/react",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "version": "0.0.1",
+  "description": "React specific wrapper for component-library",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -20,7 +23,7 @@
     "access": "public"
   },
   "dependencies": {
-    "gantt-component": "*"
+    "@workspace/stencil": "*"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

@@ -1,4 +1,5 @@
-import { MyComponent, defineCustomElements } from "react-library";
+import { MyComponent } from "@workspace/react";
+import { defineCustomElements } from "@workspace/stencil/loader";
 
 defineCustomElements();
 

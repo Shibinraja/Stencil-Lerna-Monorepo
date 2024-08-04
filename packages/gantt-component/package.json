@@ -1,5 +1,5 @@
 {
-  "name": "gantt-component",
+  "name": "@workspace/stencil",
   "version": "0.0.1",
   "description": "Stencil Component Starter",
   "main": "dist/index.cjs.js",
@@ -7,23 +7,7 @@
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/gantt-component/gantt-component.esm.js",
-  "exports": {
-    ".": {
-      "import": "./dist/gantt-component/gantt-component.esm.js",
-      "require": "./dist/gantt-component/gantt-component.cjs.js",
-      "types": "./dist/types/components.d.ts"
-    },
-    "./my-component": {
-      "import": "./dist/components/my-component.js",
-      "types": "./dist/components/my-component.d.ts"
-    },
-    "./loader": {
-      "import": "./loader/index.js",
-      "require": "./loader/index.cjs",
-      "types": "./loader/index.d.ts"
-    }
-  },
+  "unpkg": "dist/stencil/stencil.esm.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/ionic-team/stencil-component-starter.git"

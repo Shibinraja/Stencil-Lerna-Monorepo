@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import { ComponentLibrary } from 'vue-library';
+import { ComponentLibrary } from '@workspace/vue';
 
 import App from './App.vue'
 
